@@ -340,18 +340,18 @@
 
 //-----------------------------------------------------------------------------------------------
 
-let arr1 = [1,2,3 ,{ name:"Vishal"}];
-let arr2 = [...arr1];
- console.log(arr2); //[1,2,3,{name:"Vishal"}]
+// let arr1 = [1,2,3 ,{ name:"Vishal"}];
+// let arr2 = [...arr1];
+//  console.log(arr2); //[1,2,3,{name:"Vishal"}]
 
- arr2[2] = 100;
+//  arr2[2] = 100;
 
- console.log(arr1);  //[1,2,3,{name:"Vishal"}]
- console.log(arr2);  //[1,2,100,{name:"Vishal"}]
+//  console.log(arr1);  //[1,2,3,{name:"Vishal"}]
+//  console.log(arr2);  //[1,2,100,{name:"Vishal"}]
 
-arr2[3].name = "Abhishek";
-console.log(arr1);  //[1,2,3,{name:"Abhishek"}]   // yaha premitive data type change nhi hoga but reference data type change hoga
-console.log(arr2);  //[1,2,100,{name:"Abhishek"}]
+// arr2[3].name = "Abhishek";
+// console.log(arr1);  //[1,2,3,{name:"Abhishek"}]   // yaha premitive data type change nhi hoga but reference data type change hoga
+// console.log(arr2);  //[1,2,100,{name:"Abhishek"}]
 
 // agar value me ya premitive value change karenge to wo change ho jayega jisme change karenge only usi me 
 //  arr2[2] = 100; = [1,2,100,{name:"Vishal"}] ------>>>but obj me change karenge to 
@@ -360,7 +360,10 @@ console.log(arr2);  //[1,2,100,{name:"Abhishek"}]
 
 //-------------------------------------------------------------------------------------------
  //Rest operator or spread operator kub bolenge 
+
 //rest operator-> jab hum function ke parameter me use karte hai to usse rest operator bolte hai
 //spread operator-> jab hum array ya object ke elements ko spread karte hai to usse spread operator bolte hai
 
 //donated by (...)
+
+//----------------------------------------------------------------------------------------------
