@@ -68,3 +68,45 @@
 
 
 //-----------------------------------------------------------------------------------------------
+
+//Promises in JavaScript
+
+//Promise =>>>>>>>   ye ek object hota hai jo asynchronous operation ke result ko represent karta hai, 
+// ye 3 states me hota hai =>>> pending, fulfilled, rejected
+//1.Example of Promise
+
+let promise = new Promise(function(resolve, reject) {
+    let success = true;                          // Simulating success or failure
+    if (success) {
+        resolve("Operation successful!");      // Resolving the promise with a success message
+    } else {
+        reject("Operation failed!");          // Rejecting the promise with an error message
+    }
+});
+promise.then(function(result) {
+    console.log(result);                    // This will run if the promise is resolved successfully
+}).catch(function(error) {
+    console.error(error);                // This will run if the promise is rejected
+});
+
+//2.Example of Promise with setTimeout
+
+// let promise = new Promise(function(resolve, reject) {    
+
+//     setTimeout(function() {
+//         let success = true; // Simulating success or failure
+//         if (success) {
+//             resolve("Operation successful!"); // Resolving the promise with a success message
+//         } else {
+//             reject("Operation failed!"); // Rejecting the promise with an error message
+//         }
+//     }, 2000); // Simulating an asynchronous operation with a delay of 2 seconds
+// });
+
+// promise.then(function(result) {
+//     console.log(result); // This will run if the promise is resolved successfully
+// }).catch(function(error) {
+//     console.error(error); // This will run if the promise is rejected
+// });
+
+//-------------------------------------------------------------------------------------------
