@@ -75,19 +75,19 @@
 // ye 3 states me hota hai =>>> pending, fulfilled, rejected
 //1.Example of Promise
 
-let promise = new Promise(function(resolve, reject) {
-    let success = true;                          // Simulating success or failure
-    if (success) {
-        resolve("Operation successful!");      // Resolving the promise with a success message
-    } else {
-        reject("Operation failed!");          // Rejecting the promise with an error message
-    }
-});
-promise.then(function(result) {
-    console.log(result);                    // This will run if the promise is resolved successfully
-}).catch(function(error) {
-    console.error(error);                // This will run if the promise is rejected
-});
+// let promise = new Promise(function(resolve, reject) {
+//     let success = true;                          // Simulating success or failure
+//     if (success) {
+//         resolve("Operation successful!");      // Resolving the promise with a success message
+//     } else {
+//         reject("Operation failed!");          // Rejecting the promise with an error message
+//     }
+// });
+// promise.then(function(result) {
+//     console.log(result);                    // This will run if the promise is resolved successfully
+// }).catch(function(error) {
+//     console.error(error);                // This will run if the promise is rejected
+// });
 
 //2.Example of Promise with setTimeout
 
