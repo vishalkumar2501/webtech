@@ -167,6 +167,35 @@
 
 //3. what is constructor
 
+// class Person {
+//   String name;
+//   int age;
+//
+//   Person(this.name, this.age);
+// }
+//
+// void main() {
+//   Person person = Person("Vishal", 21);
+//   print(person.name);
+//   print(person.age);
+// }
+
   
 
 //4. what is method
+
+// class Person {
+//   String name;
+//   int age;
+//
+//   Person(this.name, this.age);
+//
+//   void greet() {
+//     print("Hello, my name is $name and I'm $age years old.");
+//   }
+// }
+//
+// void main() {
+//   Person person = Person("Vishal", 21);
+//   person.greet();
+// }
