@@ -199,3 +199,88 @@
 //   Person person = Person("Vishal", 21);
 //   person.greet();
 // }
+
+//oops in dart
+
+// Class
+  
+// class Student {
+//   String name = "";
+//   int age = 0;
+
+//   void display() {
+//     print("Name: $name");
+//     print("Age: $age");
+//   }
+// }
+
+
+
+// Object
+// void main() {
+//   Student s1 = Student();
+//   s1.name = "Vishal";
+//   s1.age = 20;
+//   s1.display();
+// }
+  
+  //cunstructor
+//   class Student {
+//   String name;
+//   int age;
+
+//   Student(this.name, this.age);
+// }
+
+// Inheritance
+// class Animal {
+//   void sound() {
+//     print("Animal makes sound");
+//   }
+// }
+
+// class Dog extends Animal {
+//   void bark() {
+//     print("Dog barks");
+//   }
+// }
+
+// Polymorphism
+// class Animal {
+//   void sound() {
+//     print("Animal sound");
+//   }
+// }
+
+// class Dog extends Animal {
+//   @override
+//   void sound() {
+//     print("Dog barks");
+//   }
+// }
+
+
+// Encapsulation
+// class BankAccount {
+//   double _balance = 0;
+
+//   void deposit(double amount) {
+//     _balance += amount;
+//   }
+
+//   double getBalance() {
+//     return _balance;
+//   }
+// }
+
+// Abstraction
+// abstract class Shape {
+//   void area();
+// }
+
+// class Circle extends Shape {
+//   @override
+//   void area() {
+//     print("Area of Circle");
+//   }
+// }
