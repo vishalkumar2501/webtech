@@ -284,3 +284,14 @@
 //     print("Area of Circle");
 //   }
 // }
+// Abstraction
+// abstract class Shape {
+//   void area();
+// }
+
+// class Circle extends Shape {
+//   @override
+//   void area() {
+//     print("Area of Circle");
+//   }
+// }
