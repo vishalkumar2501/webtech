@@ -141,11 +141,13 @@
 // ✔ Constructor
 // ✔ this keyword
 // ✔ Object creation
-// ✔ Inheritance (extends)
 // ✔ super keyword
 // ✔ Method overriding
-// ✔ Polymorphism
 // ✔ @override annotation
+// ✔ Inheritance (extends)
+//   Encapsulation
+// ✔ Polymorphism
+//   Abstraction
 // 🎯 Assignment me use:
 
 // Person

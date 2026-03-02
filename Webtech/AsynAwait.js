@@ -4,13 +4,13 @@
 // Matlab:
 // 👉 Jab koi kaam time leta hai (jaise API call, database se data lana, file read karna), tab hum async–await use karte hain.
 
-console.log("Start");
+// console.log("Start");
 
-setTimeout(() => {
-  console.log("Data aa gaya");
-}, 2000);
+// setTimeout(() => {
+//   console.log("Data aa gaya");
+// }, 2000);
 
-console.log("End");
+// console.log("End");
 // Output:
 
 // Start
