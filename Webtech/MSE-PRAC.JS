@@ -152,6 +152,7 @@ findMax([10,2]) → 10
 // }
 // console.log(findMax([1,5,3]));
 // console.log(findMax([10,2]));
+//console.log(findMax(numberArray));
 
 /*
 -----------------------------------------------------------
@@ -369,32 +370,32 @@ DO NOT MODIFY THIS FUNCTION
 -----------------------------------------------------------
 */
 
-function driver() {
-  console.log("---- ES6 ASSIGNMENT DRIVER START ----");
+// function driver() {
+//   console.log("---- ES6 ASSIGNMENT DRIVER START ----");
 
-  console.log("Sum:", sumNumbers(1, 2, 3));
+//   console.log("Sum:", sumNumbers(1, 2, 3));
 
 
-  console.log("Merged:", mergeArrays([1, 2], [3, 4]));
-  console.log("Updated Object:", updateObject(student, "city", "Delhi"));
-  console.log("Max Value:", findMax(numberArray));
-  console.log("Extracted:", extractElements(numberArray));
-  console.log("Formatted Student:", formatStudent(student));
-  console.log("Default Add:", addDefault());
+//   console.log("Merged:", mergeArrays([1, 2], [3, 4]));
+//   console.log("Updated Object:", updateObject(student, "city", "Delhi"));
+//   console.log("Max Value:", findMax(numberArray));
+//   console.log("Extracted:", extractElements(numberArray));
+//   console.log("Formatted Student:", formatStudent(student));
+//   console.log("Default Add:", addDefault());
 
-  const successPromise = createSuccessPromise("Operation Successful");
-  const conditionPromise = createConditionalPromise(false);
+//   const successPromise = createSuccessPromise("Operation Successful");
+//   const conditionPromise = createConditionalPromise(false);
 
-  handlePromise(successPromise);
-  handlePromise(conditionPromise);
+//   handlePromise(successPromise);
+//   handlePromise(conditionPromise);
 
-  console.log("---- ES6 ASSIGNMENT DRIVER END ----");
-}
+//   console.log("---- ES6 ASSIGNMENT DRIVER END ----");
+// }
 
-/*
------------------------------------------------------------
-RUN DRIVER
------------------------------------------------------------
-*/
+// /*
+// -----------------------------------------------------------
+// RUN DRIVER
+// -----------------------------------------------------------
+// */
 
-driver();
+// driver();
