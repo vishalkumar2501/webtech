@@ -591,6 +591,4 @@ let max = numbers.reduce((acc, curr) => {
 
 console.log(max);
 
-Output:
-
-50
+Output: 50 // aur kuch nahi
