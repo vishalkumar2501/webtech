@@ -450,145 +450,148 @@
 // ✅ Promise creation
 
 
-🔥 3️⃣ Simple Promise Example (Most Basic)
+// 🔥 3️⃣ Simple Promise Example (Most Basic)
 
-let promise = new Promise((resolve, reject) => {
-    resolve("Data mil gaya");
-});
+// let promise = new Promise((resolve, reject) => {
+//     resolve("Data mil gaya");
+// });
 
-promise.then((result) => {
-    console.log(result);
-});
+// promise.then((result) => {
+//     console.log(result);
+// });
 
-👉 Output:Data mil gaya
-✔ .then() success handle karta hai
---------------------------------------------------------------
+// 👉 Output:Data mil gaya
+// ✔ .then() success handle karta hai
+// --------------------------------------------------------------
 
-🔥 4️⃣ Reject Example
+// 🔥 4️⃣ Reject Example
 
-let promise = new Promise((resolve, reject) => {
-    reject("Network Error");
-});
+// let promise = new Promise((resolve, reject) => {
+//     reject("Network Error");
+// });
 
-promise
-    .then((result) => {
-        console.log(result);
-    })
-    .catch((error) => {
-        console.log(error);
-    });
+// promise
+//     .then((result) => {
+//         console.log(result);
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//     });
 
-👉 Output:Network Error
+// 👉 Output:Network Error
 
-✔ .catch() error handle karta hai
+// ✔ .catch() error handle karta hai
 
----------------------------------------------------------------
+// ---------------------------------------------------------------
 
-🔥 6️⃣ Condition Based Promise
-let isPaid = true;
+// 🔥 6️⃣ Condition Based Promise
+// let isPaid = true;
 
-let payment = new Promise((resolve, reject) => {
+// let payment = new Promise((resolve, reject) => {
 
-    if (isPaid) {
-        resolve("Payment Successful");
-    } else {
-        reject("Payment Failed");
-    }
+//     if (isPaid) {
+//         resolve("Payment Successful");
+//     } else {
+//         reject("Payment Failed");
+//     }
 
-});
+// });
 
-payment
-    .then(msg => console.log(msg))
-    .catch(err => console.log(err));
+// payment
+//     .then(msg => console.log(msg))
+//     .catch(err => console.log(err));
 
-👉 Output:Payment Successful
-============================================================================
-
-
-// ✅ Promise consume (then/catch)
-🔥 1️⃣ Basic Success + Error Handling
-let promise = new Promise((resolve, reject) => {
-    let success = true;
-
-    if (success) {
-        resolve("Data Loaded ✅");
-    } else {
-        reject("Error Occurred ❌");
-    }
-});
-
-promise
-    .then(result => console.log(result))
-    .catch(error => console.log(error));
-
-✔ .then() → success handle
-✔ .catch() → error handle
+// 👉 Output:Payment Successful
+// ============================================================================
 
 
-// ✅ setTimeout
-// 1️⃣3️⃣ Map-------------------------------------------
-🔥 Example 1: Square of Numbers
+// // ✅ Promise consume (then/catch)
+// 🔥 1️⃣ Basic Success + Error Handling
+// let promise = new Promise((resolve, reject) => {
+//     let success = true;
 
-let numbers = [1, 2, 3, 4];
+//     if (success) {
+//         resolve("Data Loaded ✅");
+//     } else {
+//         reject("Error Occurred ❌");
+//     }
+// });
 
-let squared = numbers.map(function(num) {
-    return num * num;
-});
+// promise
+//     .then(result => console.log(result))
+//     .catch(error => console.log(error));
 
-console.log(squared);
-✅ Output:[1, 4, 9, 16]
-
-
-🔥 Example 2: Add 10 to Each Element
-let arr = [5, 10, 15];
-
-let result = arr.map(num => num + 10);
-
-console.log(result);
-
-Output:[15, 20, 25]
-
-// 1️⃣4️⃣ Filter-------------------------------------
-🔥 Example 1: Even Numbers
-let numbers = [1, 2, 3, 4, 5, 6];
-
-let even = numbers.filter(function(num) {
-    return num % 2 === 0;
-});
-
-console.log(even);
-✅ Output:[2, 4, 6]
+// ✔ .then() → success handle
+// ✔ .catch() → error handle
 
 
+// // ✅ setTimeout
+// // 1️⃣3️⃣ Map-------------------------------------------
+// 🔥 Example 1: Square of Numbers
 
-🔥 Example 2: Marks Greater Than 50
-let marks = [40, 60, 75, 30, 90];
+// let numbers = [1, 2, 3, 4];
 
-let passed = marks.filter(mark => mark > 50);
+// let squared = numbers.map(function(num) {
+//     return num * num;
+// });
 
-console.log(passed);
-
-Output:[60, 75, 90]
-
-// 1️⃣5️⃣ Reduce--------------------------------------------
-🔥 Example 1: Sum of Array
-let numbers = [10, 20, 30];
-
-let total = numbers.reduce(function(acc, curr) {
-    return acc + curr;
-}, 0);
-
-console.log(total);
-✅ Output:60
+// console.log(squared);
+// ✅ Output:[1, 4, 9, 16]
 
 
-🔥 Example 2: Find Maximum Value
-let numbers = [5, 10, 2, 50, 25];
+// 🔥 Example 2: Add 10 to Each Element
+// let arr = [5, 10, 15];
 
-let max = numbers.reduce((acc, curr) => {
-    return acc > curr ? acc : curr;
-});
+// let result = arr.map(num => num + 10);
 
-console.log(max);
+// console.log(result);
 
-Output: 50 // aur kuch nahi
+// Output:[15, 20, 25]
+
+// // 1️⃣4️⃣ Filter-------------------------------------
+// 🔥 Example 1: Even Numbers
+// let numbers = [1, 2, 3, 4, 5, 6];
+
+// let even = numbers.filter(function(num) {
+//     return num % 2 === 0;
+// });
+
+// console.log(even);
+// ✅ Output:[2, 4, 6]
+
+
+
+// 🔥 Example 2: Marks Greater Than 50
+// let marks = [40, 60, 75, 30, 90];
+
+// let passed = marks.filter(mark => mark > 50);
+
+// console.log(passed);
+
+// Output:[60, 75, 90]
+
+// // 1️⃣5️⃣ Reduce--------------------------------------------
+// 🔥 Example 1: Sum of Array
+// let numbers = [10, 20, 30];
+
+// let total = numbers.reduce(function(acc, curr) {
+//     return acc + curr;
+// }, 0);
+
+// console.log(total);
+// ✅ Output:60
+
+
+// 🔥 Example 2: Find Maximum Value
+// let numbers = [5, 10, 2, 50, 25];
+
+// let max = numbers.reduce((acc, curr) => {
+//     return acc > curr ? acc : curr;
+// });
+
+// console.log(max);
+
+// Output: 50 // aur kuch nahi
+
+
+//============================================================================================
