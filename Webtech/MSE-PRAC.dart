@@ -121,7 +121,7 @@ calculate(10, 0, "/") → "Error"
 // print("Calculator: ${calculate(10, 5, "+")}");
 // print("Calculator : ${calculate(10, 0, "/")}");
 
-// }
+//  }
 /*
 -----------------------------------------------------------
 FUNCTION 2
@@ -340,8 +340,6 @@ fetchData("Hello") → Completes with "Hello"
 // Future<String> fetchData(String message) {
 //   // STUDENT CODE STARTS HERE
 //   return Future.delayed(Duration(seconds: 2), () => message);
-    
-
 //   // STUDENT CODE ENDS HERE
 // }
 //  void main() async {
@@ -369,19 +367,19 @@ await consumeFuture(fetchData("Done"))
  */
 
 // Future return karne wala function
-// Future<String> fetchData(String message) {
-//   return Future.delayed(Duration(seconds: 0), () => message);
-// }
-// Future<void> consumeFuture(Future<String> future) async {
-//   // STUDENT CODE STARTS HERE
-//   String result = await future;
-//   print(result);
+Future<String> fetchData(String message) {
+  return Future.delayed(Duration(seconds: 0), () => message);
+}
+Future<void> consumeFuture(Future<String> future) async {
+  // STUDENT CODE STARTS HERE
+  String result = await future;
+  print(result);
 
-//   // STUDENT CODE ENDS HERE
-// }
-//     void main() async {
-//     await consumeFuture(fetchData("Done"));
-//   } 
+  // STUDENT CODE ENDS HERE
+}
+    void main() async {
+    await consumeFuture(fetchData("Done"));
+  } 
 
  /*
 -----------------------------------------------------------
