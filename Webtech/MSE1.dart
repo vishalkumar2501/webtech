@@ -469,6 +469,7 @@
 //   Person(this._name);
 
 //   String get name => _name;
+//   String get name => _name;
 
 //   set name(String value) {
 //     _name = value;
@@ -590,5 +591,8 @@
 // }
 
 // void main() {
+//   print("Calculator: ${calculate(5, 3)}");
+// }
+//void main() {
 //   print("Calculator: ${calculate(5, 3)}");
 // }
